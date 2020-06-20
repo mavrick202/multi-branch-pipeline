@@ -5,6 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'hostname'
+                sh 'pwd'
             }
         }
         stage('Test') {
