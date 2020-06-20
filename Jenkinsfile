@@ -6,7 +6,7 @@ pipeline {
         echo 'Building..'
         sh 'hostname'
         sh 'pwd'
-        sh 'ls -al && apt update'
+        sh 'ls -al && hostname && pwd && cat /etc/passwd'
       }
     }
 
