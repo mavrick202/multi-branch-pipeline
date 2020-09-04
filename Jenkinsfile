@@ -12,7 +12,13 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
+          steps {
+            sh 'ls -al'
+          }
+        }
+
+        stage('teststage') {
           steps {
             sh 'ls -al'
           }
@@ -29,7 +35,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             sleep 10
           }
