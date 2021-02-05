@@ -9,9 +9,15 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('build-2') {
           steps {
             sh 'ls -al'
+          }
+        }
+
+        stage('build-3') {
+          steps {
+            sleep 5
           }
         }
 
